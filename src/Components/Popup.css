@@ -1,0 +1,38 @@
+.Popup{
+    padding: 20%;
+    width: 100vw;
+    height: 100%;
+    background-color: #282c34;
+    z-index: 100;
+    box-shadow: 10px 10px 60px black;
+}
+
+.PopupButton{
+    font-size: 18px;
+    padding: 9px;
+    margin: 10px;
+    background-color: green;
+    color: white;
+    border: 2px solid green;
+    border-radius: 5px;
+    margin-bottom: 30px;
+} 
+
+
+.PopupButton:hover{
+    background-color: #282c34;
+    transition: 1s ease-in-out;
+    color: green;
+}
+
+@media (max-width:768px) {
+    .popupBill{
+        font-size: medium;
+    }
+    .para{
+        font-size: medium;
+    }
+    .Popup{
+        padding: 20px;
+    }
+}
