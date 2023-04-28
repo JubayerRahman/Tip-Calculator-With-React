@@ -12,10 +12,11 @@ const Popup =(props)=>{
     return(
         <div className="Popup" >
             <h1 className="popupBill">{props.totalBill}</h1>
-            {!devp &&<p className="para">P.S: if you click on the remove button it will automatically be removed</p>}
+            <h1 className="popupBill">{props.spillBetween}</h1>
+            <h1 className="popupBill">{props.singleBill}</h1>
             {devp &&<p className="para">{dev}</p>}
-            <button className="PopupButton" onClick={addDev}>Dev who?</button>
-            <button className="PopupButton"  onClick={props.onHide}>reomve</button>
+            <button className="PopupButton devButton" onClick={addDev}>Dev 👨‍💻 who?</button>
+            <button className="PopupButton"  onClick={props.onHide}>reload 🔃</button>
         </div>
     )
 }
